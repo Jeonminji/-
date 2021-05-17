@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+      <title>CAKE TAILOR</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" >
+
+      </head>
+      <body>
+        <div class="header">
+          <h1>CAKE TAILOR</h1>
+        </div>
+        <div id="topnav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="market_s1.html">Products</a>
+            <!-- <li><a href="products.html">Products</a> -->
+              <ul class="sub">
+                <li><a href="market_s1.html">O'Bread</a></li>
+                <!-- <li><a href="market_s2.html">market2</a></li>
+                <li><a href="market_s3.html">market3</a></li>
+                <li><a href="market_s4.html">market4</a></li> -->
+              </ul>
+            </li>
+            <li><a href="best.html">Best&nbsp;Sellers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help&nbsp;Center</a></li>
+            <li><a href="join.html">Join</a></li>
+            <!-- <li><a href="wish.html" style="float:right">wishlist&nbsp;icon</a></li> -->
+          </ul>
+        </div>
+    <div class="login" >
+        <h1>Log In</h1>
+        <h3>매장 메뉴 관리, 주문 확인</h3>
+        <br>
+        <div>
+            <form action="login_process.php" method="POST">
+                <div>
+                    <input type="text" name="s_id" placeholder=" ID" style="height: 35px; font-size: 1.2em;">
+                </div>
+                <div style="height: 10px;"></div>
+                <div>
+                    <input type="password" name="s_password" placeholder=" PASSWORD" style="height: 35px; font-size: 1.2em;">
+                </div>
+                <br>
+                <input type="submit" name="loginInfo" value="Log In" class="button" >
+            </form>
+        </div>
+    </div>
+    <div id="space"></div>
+
+    <div class="login" style="background-color: lightpink;">
+        <h1>기업 회원 등록&nbsp; > </h1>
+        <h3>Join Us!!</h3>
+        <br>
+        <button class="button" onclick="location.href='join_form.html'">
+          Join
+        </button>
+        <h5><br> * 기업만 이용 가능한 기능 입니다.</h5>
+    </div>
+    <div id="space"></div>
+
+    <div class="footer">
+        <ul style="display: inline; list-style: none; ">
+            <li>Policy</li>
+            <br>
+            <li>Shipping & Returns</li>
+            <li>Payment Methods</li>
+            <li>FAQ</li>
+        </ul>
+    </div>
+
+</body>
+</html>

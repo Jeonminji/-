@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>CAKE TAILOR</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" >
+    <script src="java.js"></script>
+    <script type="text/javascript" 
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ee0eb182138378558cb4db1be2a8a3b&libraries=services">
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>CAKE TAILOR</h1>
+    </div>
+    
+    <div id="topnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="market_s1.html">Products</a>
+          <!-- <li><a href="products.html">Products</a> -->
+            <ul class="sub">
+              <li><a href="market_s1.html">O'Bread</a></li>
+              <!-- <li><a href="market_s2.html">market2</a></li>
+              <li><a href="market_s3.html">market3</a></li>
+              <li><a href="market_s4.html">market4</a></li> -->
+            </ul>
+          </li>
+          <li><a href="best.html">Best&nbsp;Sellers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help&nbsp;Center</a></li>
+          <li><a href="join.html">Join</a></li>
+          <!-- <li><a href="wish.html" style="float:right">wishlist&nbsp;icon</a></li> -->
+        </ul>
+      </div>
+    <div class="page_title">
+        Get in Touch
+    </div>
+
+    <!--product list-->
+    <div class="filter">
+        <h1 style="font-size: 2.5em;">Store Name</h1>
+         <div>
+             <ul style="list-style: none;">
+                 <a href="#store1" class="btn"><li class="btn" onclick="show_store_info('store1_address')">&nbsp; - O'Bread</li><div class="s_space" style="height: 15px;"></div></a>
+                 <!-- <li>store 2</li><div class="s_space" style="height: 15px;"></div>
+                 <li>store 3</li><div class="s_space" style="height: 15px;"></div>
+                 <li>store 4</li>
+                 <li>store 5</li>
+                 <li>store 6</li>
+                 <li>store 7</li>
+                 <li>store 8</li>
+                 <li>store 9</li>
+                 <li>store 10</li> -->
+             </ul>
+         </div>
+    </div>
+        
+    <div style="float: left; width: 80%;">
+        
+        <div id="store1_address" style="display: none; margin: 10%;"><h1 style="font-size: 2.5em;">O'Bread</h1>
+            <p style="font-size: 1.3em; margin: 5%;">
+                - 주소 : 서울특별시 서대문수 신촌로 29길 16
+               <br> - 영업시간 : 11:00 - 20:00
+           </p>
+            <center><div id="map"></div></center>
+        </div>
+        <!--
+        <div class="container_product">
+            <div>
+                <div>
+                    <div>
+                        <a href="product1_s1.html"><img src="./image/1.jpg" alt=""></a>
+                    </div>
+                    <div class="p_info">
+                        1. 상품명1
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        2. 상품명2
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        3. 상품명3
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        4. 상품명4
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        5. 상품명5
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        6. 상품명6
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        7. 상품명7
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        8. 상품명8
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        9. 상품명9
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        10. 상품명10
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        11. 상품명11
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        12. 상품명12
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    -->
+    </div>
+    
+    <div style="clear: both;"></div>
+    <div class="footer">
+        <ul style="display: inline; list-style: none; ">
+            <li>Policy</li>
+            <br>
+            <li>Shipping & Returns</li>
+            <li>Payment Methods</li>
+            <li>FAQ</li>
+        </ul>
+    </div>
+
+</body>
+</html>

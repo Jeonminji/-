@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>market1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" >
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>CAKE TAILOR</h1>
+    </div>
+    
+    <div id="topnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="market_s1.html">Products</a>
+          <!-- <li><a href="products.html">Products</a> -->
+            <ul class="sub">
+              <li><a href="market_s1.html">O'Bread</a></li>
+              <!-- <li><a href="market_s2.html">market2</a></li>
+              <li><a href="market_s3.html">market3</a></li>
+              <li><a href="market_s4.html">market4</a></li> -->
+            </ul>
+          </li>
+          <li><a href="best.html">Best&nbsp;Sellers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help&nbsp;Center</a></li>
+          <li><a href="join.html">Join</a></li>
+          <!-- <li><a href="wish.html" style="float:right">wishlist&nbsp;icon</a></li> -->
+        </ul>
+      </div>
+
+    <div class="page_title">
+        밍구 케이크
+    </div>
+    <!--product list-->
+    <div class="filter"></div>
+    <!--
+    <div class="filter">
+        <h1 style="font-size: 2.5em;">Filter by</h1>
+        <div>
+            <div>
+                <h3 style="display: inline;">Size&nbsp;</h3>
+                <div class="s_space" style="height: 2px;"></div>
+                <div>
+                    <label for="allCheck1" class="all"><input type="checkbox" class="allChk" id="allCheck1" onclick="allChk1(event)" checked>&nbsp;&nbsp;전체 ∨&nbsp;&nbsp;<br></label>
+                    <div class="s_space" style="height: 10px;"></div>
+                    <input type="checkbox" value="1" class="size" onclick="chkAllList1(event)" checked>1호<div class="s_space" style="height: 3px;"></div>
+                    <input type="checkbox" value="2" class="size" onclick="chkAllList1(event)" checked>2호<div class="s_space" style="height: 3px;"></div>
+                    <input type="checkbox" value="3" class="size" onclick="chkAllList1(event)" checked>3호<div class="s_space" style="height: 3px;"></div>
+                </div>
+                <div class="s_space"></div>
+                <div class="s_space"></div>
+            </div>
+            <div>
+                <h3 style="display: inline;">Shape&nbsp;</h3>
+                <div class="s_space" style="height: 5px;"></div>
+                <div>
+                    <label for="allCheck2" class="all"><input type="checkbox" class="allChk" id="allCheck2" onclick="allChk2(event)" checked>&nbsp;&nbsp;전체 ∨&nbsp;&nbsp;<br></label>
+                    <div class="s_space" style="height: 10px;"></div>
+                    <input type="checkbox" value="Circle" class="shape" onclick="chkAllList2(event)" checked>원형<div class="s_space" style="height: 3px;"></div>
+                    <input type="checkbox" value="Square" class="shape" onclick="chkAllList2(event)" checked>사각형<div class="s_space" style="height: 3px;"></div>
+                    <input type="checkbox" value="Heart" class="shape" onclick="chkAllList2(event)" checked>하트<div class="s_space" style="height: 3px;"></div>
+                </div>
+                <div class="s_space"></div>
+                <div class="s_space"></div>
+            </div>
+            
+            <h3 style="display: inline;">Flavor&nbsp;</h3>
+            <div class="s_space" style="height: 2px;"></div>
+            <div>
+                <label for="allCheck3" class="all"><input type="checkbox" class="allChk" id="allCheck3" onclick="allChk3(event)" checked>&nbsp;&nbsp;전체 ∨&nbsp;&nbsp;<br></label>
+                <div class="s_space" style="height: 10px;"></div>
+                <input type="checkbox" value="custard" class="flavor" onclick="chkAllList3(event)" checked>일반<div class="s_space" style="height: 3px;"></div>
+                <input type="checkbox" value="choco" class="flavor" onclick="chkAllList3(event)" checked>초코<div class="s_space" style="height: 3px;"></div>
+                <input type="checkbox" value="redVelvet" class="flavor" onclick="chkAllList3(event)" checked>레드벨벳<div class="s_space" style="height: 3px;"></div>
+                <input type="checkbox" value="carrot" class="flavor" onclick="chkAllList3(event)" checked>당근<div class="s_space" style="height: 3px;"></div>
+                <input type="checkbox" value="greenTea" class="flavor" onclick="chkAllList3(event)" checked>녹차<div class="s_space" style="height: 3px;"></div>
+                <input type="checkbox" value="began" class="flavor" onclick="chkAllList3(event)" checked>비건<div class="s_space" style="height: 3px;"></div>
+            </div>
+            
+            <div class="s_space"></div>
+            <div class="s_space"></div>
+            <h3 style="display: inline;">Sugar Content&nbsp;</h3>
+            <div class="s_space" style="height: 5px;"></div>
+            <label for="allCheck4" class="all"><input type="checkbox" class="allChk" id="allCheck4" onclick="allChk4(event)" checked>&nbsp;&nbsp;전체 ∨&nbsp;&nbsp;<br></label>
+            <div class="s_space" style="height: 10px;"></div>
+            <input type="checkbox" value="100%" class="sugar" onclick="chkAllList4(event)" checked>100%<div class="s_space" style="height: 3px;"></div>
+            <input type="checkbox" value="70%" class="sugar" onclick="chkAllList4(event)" checked>70%<div class="s_space" style="height: 3px;"></div>
+            <input type="checkbox" value="50%" class="sugar" onclick="chkAllList4(event)" checked>50%<div class="s_space" style="height: 3px;"></div>
+            <input type="checkbox" value="0%" class="sugar" onclick="chkAllList4(event)" checked>무설탕<div class="s_space" style="height: 3px;"></div>
+        </div>
+    </div>
+-->
+
+
+    <center>
+        <div id="map" style="width:700px; height:300px;"></div>
+        <script type="text/javascript" 
+                src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ee0eb182138378558cb4db1be2a8a3b&libraries=services">
+        </script>
+
+        <script type="text/javascript">
+            var myAddress = ["서울 서대문구 신촌로29나길 7 1층"];
+
+        // 맵을 넣을 div 
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(35.95, 128.25),
+                level: 1
+            };
+
+            // 맵 표시 
+            var map = new kakao.maps.Map(container, options);
+
+            // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성
+            var mapTypeControl = new kakao.maps.MapTypeControl();
+            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+            // 지도 확대 축소를 제어할 수 있는 줌 컨트롤을 생성
+            var zoomControl = new kakao.maps.ZoomControl();
+            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+            // 주소 -> 좌표 변환 라이브러리 
+            var geocoder = new kakao.maps.services.Geocoder();
+            
+
+            //주소로 좌표 검색
+            function myMarker(number, address) {
+                geocoder.addressSearch(address, function(result, status) {
+                    if (status === kakao.maps.services.Status.OK) {
+                        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                        var marker = new kakao.maps.Marker({
+                            position: coords,
+                            clickable: true
+                        });
+
+                        // 마커를 지도에 표시
+                        marker.setMap(map);
+                
+                        map.setCenter(coords); //지도 중심 좌표 검색한 위치로 이동
+                    }
+                });
+            }
+
+            //위치 이동
+            for (i=0; i<myAddress.length; i++) {
+                myMarker(i+1, myAddress[i]);
+            }
+
+            window.onpageshow = function(event){ // 뒤로가기 이벤트 발생시 새로고침
+                if (event.persisted || (window.performance && window.performance.navigation.type == 2)){
+                    window.location.reload();
+                }
+            };
+            </script>
+    </center>
+
+    <div style="float: left; width: 80%;">
+        <div class="container_product">
+            <div>
+                <div>
+                    <div>
+                        <a href="product1_s1.html"><img src="./cake/minggucake/strawberry.jpg" alt=""></a> 
+                    </div>
+                    <div class="p_info">
+                        1. 생과일 케이크
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361;15,000
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <a href="product1_s2.html"><img src="./image/1.jpg" alt=""></a>
+                    </div>
+                    <div class="p_info">
+                        2. 레터링 케이크
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361;15,000
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <a href="product1_s3.html"><img src="./cake/minggucake/carrot.jpg" alt=""></a>
+                    </div>
+                    <div class="p_info">
+                        3. 당근 케이크
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361;15,000
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        4. 상품명4
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        5. 상품명5
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        6. 상품명6
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        7. 상품명7
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        8. 상품명8
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        9. 상품명9
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        10. 상품명10
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        11. 상품명11
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="p_info">
+                        12. 상품명12
+                    </div>
+                    <div class="p_info">
+                        ⎯⎯⎯⎯⎯⎯
+                    </div>
+                    <div class="p_info">
+                        &#8361
+                    </div>
+                    <div>
+                        <button class="addCartBtn" onclick="pop('wish.html')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <div style="clear: both;"></div>
+    <div class="footer">
+        <ul style="display: inline; list-style: none; ">
+            <li>Policy</li>
+            <br>
+            <li>Shipping & Returns</li>
+            <li>Payment Methods</li>
+            <li>FAQ</li>
+        </ul>
+    </div>
+
+</body>
+</html>

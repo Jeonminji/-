@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O'Bread/생과일</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" >
+    <script src="java.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>CAKE TAILOR</h1>
+    </div>
+    
+    <div id="topnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="market_s1.html">Products</a>
+          <!-- <li><a href="products.html">Products</a> -->
+            <ul class="sub">
+              <li><a href="market_s1.html">O'Bread</a></li>
+              <!-- <li><a href="market_s2.html">market2</a></li>
+              <li><a href="market_s3.html">market3</a></li>
+              <li><a href="market_s4.html">market4</a></li> -->
+            </ul>
+          </li>
+          <li><a href="best.html">Best&nbsp;Sellers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help&nbsp;Center</a></li>
+          <li><a href="join.html">Join</a></li>
+          <!-- <li><a href="wish.html" style="float:right">wishlist&nbsp;icon</a></li> -->
+        </ul>
+      </div>
+
+    <div class="product">
+        <div class="p_left">
+            <div class="image">
+                <img src="./cake/oBread/strawberry.jpg" alt="" id="product_img">
+                <div class="sub_img">
+                    <img src="./cake/oBread/strawberry.jpg" alt="" id="img_1" onclick="change_img(this.id)">
+                    <img src="./cake/oBread/muscat.jpg" alt="" id="img_2" onclick="change_img(this.id)">
+                    <img src="./cake/oBread/ddalba.jpg" alt="" id="img_3" onclick="change_img(this.id)">
+                </div>
+            </div>
+        </div>
+        <div class="p_right">
+            <div>
+                <p style="font-size: 2.5em; margin-top: 15%;">생과일 케이크</p>
+            </div>
+            <div>
+                <button class="button" style="margin-top: -5%;" onclick="location.href='./review.php'">리뷰&nbsp;보기</button>
+            </div>
+            <div id="space"></div>
+            <div style="font-size: x-large;">
+                &nbsp&nbsp&#8361&nbsp;15,000
+            </div>
+            <br>
+            <div style="font-size: small; color: rgb(206, 147, 156)">*&nbsp; 커스텀 결과에 따라 가격이 변동될 수 있습니다.</div>
+            <div id="space"></div>
+            <!--
+            <div>
+                <div>
+                    Pick Up : Date & Time
+                    <br>
+                    <div class="s_space"></div>
+                    <input type="date" min="2021-04-26" >
+                    <div class="s_space"></div>
+                    <input type="time">
+                </div>
+                <div class="s_space"></div>
+                <div class="s_space"></div>
+                <div class="s_space"></div>
+                <div>
+                    Size
+                    <br>
+                    <div class="s_space"></div>
+                    <select name="" id="">
+                        <option value="">미니(도시락)</option>
+                        <option value="">1호</option>
+                        <option value="">2호</option>
+                    </select>
+                </div>
+                <div class="s_space"></div>
+                <div class="s_space"></div>
+                <div class="s_space"></div>
+                <div>
+                    Flavor
+                    <br>
+                    <div class="s_space"></div>
+                    <select name="" id="">
+                        <option value="">일반</option>
+                        <option value="">초코</option>
+                        <option value="">레드벨벳</option>
+                    </select>
+                </div>
+                <div id="space"></div>
+                <div>
+                    Sugar Content
+                    <br>
+                    <div class="s_space"></div>
+                    <select name="" id="" >
+                        <option value="">100%</option>
+                        <option value="">70%</option>
+                        <option value="">50%</option>
+                    </select>
+                </div>
+                <div id="space"></div>
+                <div>
+                    Color
+                    <div class="s_space"></div>
+                    <div>
+                        &nbsp; - cake color
+                        <div style="height: 10px;"></div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="" id="">
+                           <option value="">Red</option>
+                           <option value="">Orange</option>
+                           <option value="">Yellow</option>
+                           <option value="">light Green</option>
+                           <option value="">Green</option>
+                           <option value="">Sky blue</option>
+                           <option value="">Blue</option>
+                           <option value="">Purple</option>
+                           <option value="">Pink</option>
+                           <option value="">Black</option>
+                           <option value="" selected>White</option>
+                       </select>
+                       <br>
+                       <div style="height: 10px;"></div>
+                       &nbsp;- lettering color
+                        <div style="height: 10px;"></div>
+   
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="" id="">
+                           <option value="">Red</option>
+                           <option value="">Orange</option>
+                           <option value="">Yellow</option>
+                           <option value="">light Green</option>
+                           <option value="">Green</option>
+                           <option value="">Sky blue</option>
+                           <option value="">Blue</option>
+                           <option value="">Purple</option>
+                           <option value="">Pink</option>
+                           <option value="" selected>Black</option>
+                           <option value="">White</option>
+                       </select>
+                    </div>
+                </div>
+                <div id="space"></div>
+
+                <div>
+                    문구 입력
+                    <div class="s_space"></div>
+                    <textarea name="" id="" cols="30" rows="3" style="resize: none;" maxlength="25"></textarea>
+                    <p style="font-size: small; margin-top: 0; color: rgb(206, 147, 156);"> * 글자 수 : 띄어쓰기 제외 10자 제한</p>
+                </div>
+                <div class="s_space"></div>
+                
+                <div>
+                    Quantity
+                    <div class="s_space"></div>
+                    <input type="number" pattern="[0-9]*" aria-label="Quantity" min="1" value="1" style="width: 50px; height: 25px;">
+                </div>
+            -->
+            <div style="font-size: larger;">
+                <span style="font-size: x-large;">- 설명<br><br></span>
+                <div style="margin-right: 15%;">
+                    안녕하세요 오'브레드입니다 :) <br>생과일 케이크 안내드립니다 ♡<br><br><br>
+                    * 사이즈는 도시락 ‘생크림’ 케이크 <span style="color: lightpink;">[ </span>지름 11CM <span style="color: lightpink;">] </span>입니다. <br><br>
+                    * 생과일 케이크는 레터링 없이 <span style="color: lightpink;">[ </span>딸기, 청포도, 바나나 <span style="color: lightpink;">] </span> 중 1개 택하셔서 생과일 데코레이션 들어갑니다.<br><br>
+                    * 시트는 <span style="color: lightpink;">[ </span>일반(생크림), 초코(생크림) <span style="color: lightpink;">] </span> 중에서 하나 선택하실 수 있고 시트 안에는 과일이 들어있어요!!<br><br>
+                    * 케이크 모양은 <span style="color: lightpink;">[ </span>원형만 <span style="color: lightpink;">] </span> 가능합니다. <br><br>
+                    * 겉면 크림 색상은 선택하실 수 있지만 흰색 추천드려요 :) <br>
+                    <div style="font-size: small; color: rgb(206, 147, 156)">-&nbsp; 색소가 들어가면 생크림 식감이 약간 안좋아질 수 있습니다.</div>
+                    <br>
+                    * 주문제작기간은 최소 하루 소요됩니다. 픽업은 <span style="color: lightpink;">[ </span>일요일 빼고 모든 날 <span style="color: lightpink;">] </span> 가능해요 :) <br><br>
+                </div>
+           </div>
+                <div>
+                    <div class="s_space"></div>
+                    <!-- <button class="p_button" onclick="pop('./wish.html')">Add to cart</button><br> -->
+                    <a href="3d_custom1.html"><button class="p_button">Start Customize</button></a>
+                </div>
+        </div>
+        
+        
+        <div style="clear: both;"></div>
+        <div id="space"></div>
+        <!--
+        <div class="content">설명<br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui libero illo deleniti corporis cum expedita modi sint error ea saepe quidem maiores animi, sapiente est ratione consequuntur fugiat obcaecati facere.
+            <div id="space"></div>
+            <div><img src="./image/4.jpg" alt=""></div>
+            <div id="space"></div>
+            <div>dgnsklnfekr</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+        </div>
+    -->
+    </div>
+    
+    <div style="height: 50px;"></div>
+    <!--지도-->
+    <center>
+        <div id="map" style="width:600px; height:450px;"></div>
+        <script type="text/javascript" 
+                src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ee0eb182138378558cb4db1be2a8a3b&libraries=services">
+        </script>
+
+        <script type="text/javascript">
+            var myAddress = ["서울 서대문구 신촌로29나길 7 1층"];
+
+        // 맵을 넣을 div 
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(35.95, 128.25),
+                level: 1
+            };
+
+            // 맵 표시 
+            var map = new kakao.maps.Map(container, options);
+
+            // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성
+            var mapTypeControl = new kakao.maps.MapTypeControl();
+            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+            // 지도 확대 축소를 제어할 수 있는 줌 컨트롤을 생성
+            var zoomControl = new kakao.maps.ZoomControl();
+            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+            // 주소 -> 좌표 변환 라이브러리 
+            var geocoder = new kakao.maps.services.Geocoder();
+            
+
+            //주소로 좌표 검색
+            function myMarker(number, address) {
+                geocoder.addressSearch(address, function(result, status) {
+                    if (status === kakao.maps.services.Status.OK) {
+                        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                        var marker = new kakao.maps.Marker({
+                            position: coords,
+                            clickable: true
+                        });
+
+                        // 마커를 지도에 표시
+                        marker.setMap(map);
+                
+                        map.setCenter(coords); //지도 중심 좌표 검색한 위치로 이동
+                    }
+                });
+            }
+
+            //위치 이동
+            for (i=0; i<myAddress.length; i++) {
+                myMarker(i+1, myAddress[i]);
+            }
+
+            window.onpageshow = function(event){ // 뒤로가기 이벤트 발생시 새로고침
+                if (event.persisted || (window.performance && window.performance.navigation.type == 2)){
+                    window.location.reload();
+                }
+            };
+            </script>
+    </center>
+    <h2 style="text-align: center;"><span style="font-size: 1.5em; text-align: left;">O'Bread<span style="color: #f1f1f1;">spacespacespac</span></span> <br><br>주소 : 서울특별시 서대문구 신촌로29길 16 <br><br>* 영업시간 : 11:00 - 20:00</h2>   
+
+    <div class="footer">
+        <ul style="display: block; list-style: none; ">
+            <li>Policy</li>
+            <li>Shipping & Returns</li>
+            <li>Payment Methods</li>
+            <li>FAQ</li>
+        </ul>
+    </div>
+
+</body>
+</html>

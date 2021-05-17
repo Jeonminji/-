@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D CAKE CUSTOMIZING</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="products.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" >
+        <script src="java.js"></script>
+        <script src="price_java.js"></script>
+        
+    </head>
+
+    <body style="background: linear-gradient(to bottom, lemonchiffon, white);">
+        <div class="header">
+            <h1>CAKE TAILOR</h1>
+        </div>
+        
+        <div id="topnav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="market_s1.html">Products</a>
+              <!-- <li><a href="products.html">Products</a> -->
+                <ul class="sub">
+                  <li><a href="market_s1.html">O'Bread</a></li>
+                  <!-- <li><a href="market_s2.html">market2</a></li>
+                  <li><a href="market_s3.html">market3</a></li> -->
+                  <!-- <li><a href="market_s4.html">market4</a></li> -->
+                </ul>
+              </li>
+              <li><a href="best.html">Best&nbsp;Sellers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="help.html">Help&nbsp;Center</a></li>
+              <li><a href="join.html">Join</a></li>
+              <!-- <li><a href="wish.html" style="float:right">wishlist&nbsp;icon</a></li> -->
+            </ul>
+        </div>
+        <div style="margin-top: 0%;" >
+            <div class="custom">
+                <h2>&nbsp&nbsp3D Custom &nbsp: &nbspDesign your Cake!</h2>
+            </div>
+            <div style="margin: 0% 7%;">
+                <h1>- Shape</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="cake_model" value="circle" />&nbsp;원형 모양
+                <!-- &nbsp;<input type="radio" name="cake_model" value="square" />&nbsp;사각형 모양
+                &nbsp;<input type="radio" name="cake_model" value="2layered" />&nbsp;2단 원형 모양 -->
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="radioValue()">선택 완료</button>
+            </div>
+            <br><br><br>
+            <canvas id="c"></canvas>
+        </div>
+        <div>
+            <form action="order_process_p2.php" method="POST">
+                <div class="opt1_3d">
+                    <br>
+                    <h2 style="display: inline;">&nbsp&nbsp- User Info </h2>
+                    <a style="font-size: 12px;"><span style="font-size: 22px; color:red;"> *  </span>필수입력사항</a> <br>
+                    <br><br>
+                    <div style="margin: 0% 5%;">
+                        성명<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div> 
+                        <input type="text" name="o_name" placeholder=" 성명을 입력해주세요." style="height: 40px; width: 300px;">
+                        <br><br>
+                        
+                        연락처<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <input type="text" name="o_hp" placeholder=" 010-0000-0000" style="height: 40px; width: 300px;">
+                        <br><br>
+        
+                        픽업 날짜 및 시간<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <div style="letter-spacing: normal; font-size: small; color: rgb(206, 147, 156)">*&nbsp; O'Bread 영업시간은 오전 11:00 ~ 오후 8:00 입니다. </div>
+                        <div class="s_space"></div>
+                        <input type="date" name="o_pickupD" min="2021-04-26" >
+                        <div class="s_space"></div>
+                        <input type="time" name="o_pickupT" min="11:00" max="20:00">
+                        <br><br>
+
+                        수량<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <input type="int" name="o_quantity" placeholder=" 숫자만 입력해주세요." style="height: 40px; width: 300px;">
+                        <div style="height: 100px;"></div>
+                    </div>
+                </div>
+                
+                <div class="opt2_3d">
+                    <br>
+                    <h2 style="display: inline;">&nbsp&nbsp- Cake Design </h2>
+                    <a style="font-size: 12px;"><span style="font-size: 22px; color:red;"> *  </span>필수입력사항</a> <br>
+                    <div style="height: 37px;"></div>
+                    <div style="margin: 0% 5%;">
+
+                        사이즈<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <select name="o_size" style="height: 40px;">
+                            <option value="도시락">도시락(미니)</option>
+                        </select>
+                        <br><br>
+
+                        케이크 모양<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <select name="o_shape" style="height: 40px;">
+                            <option value="원형">원형</option>
+                        </select>
+                        <br><br>
+        
+                        맛 선택(과일)<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <select name="o_flavorF" style="height: 40px;">
+                            <option value="딸기">딸기</option>
+                            <option value="바나나">바나나</option>
+                            <option value="청포도">청포도</option>
+                        </select>
+                        <br><br>
+
+                        맛 선택(크림)<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <select name="o_flavor" style="height: 40px;">
+                            <option value="일반">일반(생크림)</option>
+                            <option value="초코">초코(생크림)</option>
+                            <option value="당근">당근(크림치즈)</option>
+                        </select>
+                        <br><br>
+
+                        케이크 색상<span style="font-size: 22px; color:red;"> *  </span><div style="height: 10px;"></div>
+                        <input type="text" name="o_scolor" placeholder=" 케이크 색상을 입력해주세요." style="height: 40px; width: 300px;">
+                        <br><br>
+
+                        레터링 문구<div style="height: 10px;"></div>
+                        <input type="text" name="o_lettering" placeholder=" 최대 10자까지 입력해주세요." style="height: 40px; width: 300px;">
+                        <br><br>
+        
+                        레터링 색상<div style="height: 10px;"></div>
+                        <input type="text" name="o_lcolor" placeholder=" 레터링 색상을 입력해주세요." style="height: 40px; width: 300px;">
+                        <br><br>
+        
+                        데코 크림 색상<div style="height: 10px;"></div>
+                        <input type="text" name="o_cream" placeholder=" 크림 색상을 입력해주세요." style="height: 40px; width: 300px;">
+                        <br><br>
+
+                        <br><br><br>
+                        <div class="s_space"></div>
+                        <div id="test" name="o_price" style="display: inline;">
+                            총 결제금액 : 15,000 원
+                        </div>
+                        <div class="s_space"></div>
+                        <div class="s_space"></div>
+                        <div class="s_space"></div>
+                        <input type="submit" value="결제하기" class="button" onclick="" >
+                        <div style="height: 100px;"></div>
+                    </div>
+                </div>
+            </form>
+            <br><br><br><br>
+        </div>
+    
+                <!--                 
+                ---------- 가격 계산 ----------
+                <br>
+                <div style="margin: 5%;">
+                    <div>
+                        <h2>- Shape</h2>
+                    </div>
+                    <input type="radio" id="shape" name="cake_model" value="circle" onclick="sum5(0)">원형(+0)
+                    <input type="radio" id="shape" name="cake_model" value="square" onclick="sum5(0)">사각형(+0)
+                    <input type="radio" id="shape" name="cake_model" value="heart" onclick="sum5(0)">하트(+0)
+                    <input type="radio" id="shape" name="cake_model" value="2layered" onclick="sum5(10000)">2단(+10000)
+                    <div class="s_space"></div>
+                    <div class="s_space"></div>
+                </div>
+                -->
+            <div class="s_space"></div>
+
+        <script type="module">
+                import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js';
+                import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/controls/OrbitControls.js';
+                import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/loaders/GLTFLoader.js';
+                function main1() {
+                    const canvas = document.querySelector('#c');
+                    const renderer = new THREE.WebGLRenderer({canvas});
+
+                    const fov = 45;
+                    const aspect = 2;  // the canvas default
+                    const near = 0.1;
+                    const far = 100;
+                    const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+                    camera.position.set(0, 10, 20);
+
+                    const controls = new OrbitControls(camera, canvas);
+                    controls.target.set(0, 5, 0);
+                    controls.update();
+
+                    const scene = new THREE.Scene();
+                    scene.background = new THREE.Color('#fffff0'); //배경색
+
+                    {
+                        const planeSize = 50; //바닥 사이즈 결정
+
+                        const loader = new THREE.TextureLoader();
+                        const texture = loader.load('https://threejsfundamentals.org/threejs/resources/images/checker.png'); //바닥 이미지
+                        texture.wrapS = THREE.RepeatWrapping;
+                        texture.wrapT = THREE.RepeatWrapping;
+                        texture.magFilter = THREE.NearestFilter;
+                        const repeats = planeSize / 20; //체크 바닥 사용할거면 필요
+                        texture.repeat.set(repeats, repeats);
+
+                        const planeGeo = new THREE.PlaneGeometry(planeSize, planeSize);
+                        const planeMat = new THREE.MeshPhongMaterial({
+                            map: texture,
+                            side: THREE.DoubleSide
+                        });
+                        //아래 코드 지우면 바닥 없어짐
+                        // const mesh = new THREE.Mesh(planeGeo, planeMat);
+                        // mesh.rotation.x = Math.PI * -.5;
+                        // scene.add(mesh);
+                    }
+
+                    //바닥색 설정
+                    {
+                        const skyColor = 0xB1E1FF;  // light blue
+                        const groundColor = 0xB97A20;  // brownish orange(바닥 밑면)
+                        const intensity = 1;
+                        const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
+                        scene.add(light);
+                    }
+
+                    //light 색 설정
+                    {
+                        const color = 0xFFFFFF;
+                        const intensity = 1;
+                        const light = new THREE.DirectionalLight(color, intensity);
+                        light.position.set(5, 10, 2);
+                        scene.add(light);
+                        scene.add(light.target);
+                    }
+
+                    //3D 모델 불러오는 코드
+                    const gltfLoader = new GLTFLoader();
+                    gltfLoader.load('./3D/basic_cylinder_cake.glb', (gltf) => {
+                        const root = gltf.scene;
+                        scene.add(root); //여기까지
+                    });
+
+                    function resizeRendererToDisplaySize(renderer) {
+                        const canvas = renderer.domElement;
+                        const width = canvas.clientWidth;
+                        const height = canvas.clientHeight;
+                        const needResize = canvas.width !== width || canvas.height !== height;
+                        if (needResize) {
+                            renderer.setSize(width, height, false);
+                        }
+                        return needResize;
+                    }
+
+                    function render() {
+                        if (resizeRendererToDisplaySize(renderer)) {
+                            const canvas = renderer.domElement;
+                            camera.aspect = canvas.clientWidth / canvas.clientHeight;
+                            camera.updateProjectionMatrix();
+                        }
+                        renderer.render(scene, camera);
+                        requestAnimationFrame(render);
+                    }
+                    requestAnimationFrame(render);
+                }
+                window.main1 = main1;
+        </script>
+        <script>
+            function radioValue() {
+                var obj_length = document.getElementsByName("cake_model").length;
+    
+                for (var i=0; i<obj_length; i++) {
+                    if (document.getElementsByName("cake_model")[i].checked == true) {
+                        if(document.getElementsByName("cake_model")[i].value == "circle") {
+                            main1();
+                        }
+                    }
+                }
+            }
+        </script>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,124 @@
+.p_left {
+    float: left;
+    width: 60%;
+    height: auto;
+    line-height: normal;
+}
+.p_right {
+    margin: 0% -5%;
+    float: left;
+    width: 40%;
+    height: auto;
+}
+.p_info {
+    padding: 0% 0% 5% 10%;
+    font-size: large;
+}
+.image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+.image {
+    margin: 10%;
+    width: 70%;
+    height: 70%;
+    border-radius: 2%;
+}
+.sub_img img {
+    width: 17%;
+    float: left;
+    margin: 2% 2% 2% 0;
+    border-radius: 5%;
+}
+.product {
+    align-items: center;
+    margin: 0% 5%;
+}
+.product h1 {
+    float: left;
+    font-size: 3em;
+    margin: 13% auto 0 auto;
+    display: inline;
+}
+.product h3 {
+    float: left;
+}
+.filter {
+    float: left; 
+    width: 20%;
+    padding: 5% 0% 0% 3%;
+    border-color: black;
+    border: 1px;
+    letter-spacing: 3px;
+    word-break: keep-all;
+}
+.filter h3{
+    font-size: 1.7em;
+    letter-spacing: 2%;
+    word-break: keep-all;
+}
+.addCartBtn {
+    width: 80%;
+    height: 45px;
+    margin-left: 10%;
+    font-size: medium;
+    letter-spacing: 1px;
+    background-color: lemonchiffon;
+    outline: none;
+    border: lemonchiffon;
+}
+.p_button {
+    width: 300px;
+	height: 40px;
+    font-size: medium;
+	background-color: transparent;
+    border-color: black;
+	border-radius: 20px;
+    margin-top: 10px;
+    outline: 0;
+}
+.p_button a {
+    text-decoration: none;
+    color: black;
+}
+.p_button:hover {
+    background-color: lightpink;
+    color: aliceblue;
+    border-color: aliceblue;
+}
+.p_button:hover > a {
+    color: aliceblue;
+}
+.chkBtn {
+    border-radius: 10px;
+    background-color: lightpink;
+    border: 0;
+    outline: none;
+    color: white;
+}
+.allChk{
+    display: none;
+}
+.all {
+    background-color: lightpink;
+    color: white;
+    border: 1px lightpink solid;
+    border-radius: 20px;
+    padding: 2px 0px;
+}
+.content {
+    width: 50%;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+}
+.content img {
+    margin: 0 auto;
+}
+.s_space {
+    height: 10px;
+}
+.btn {
+    text-decoration: none;
+}

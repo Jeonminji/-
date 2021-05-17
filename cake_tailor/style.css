@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+	padding: 0px 0px 0px 0px;
+    font-family: 'Raleway', 'Jeju Gothic', sans-serif ;
+}
+
+
+@font-face {
+    font-family: 'Jeju Gothic';
+    font-weight: lighter;
+    src: url(http://fonts.googleapis.com/earlyaccess/jejugothic.cs);
+    unicode-range: U+AC00-U+D7A3;
+}
+
+body {
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f1f1f1;
+}
+/* Header : Blog Title */
+.header {
+    width: 100%;
+    padding: 25px;
+    text-align: left;
+    background: white;
+}
+.header h1 {
+    font-size: 3em;
+	letter-spacing: 5px;
+}
+.header img {
+    width: 300px;
+    margin: 0 10px;
+}
+/* Style the top navigation bar */
+#topnav {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    height: 70px;
+    line-height: 0px;
+    background-color:dimgray;
+	letter-spacing: 2px;
+	padding: 5px 0px;
+    font-size: 1.1em;
+}
+#topnav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    padding: 0;
+    
+}
+#topnav li a{
+    display: block;
+    padding: 15px 15px;
+    margin: 0px 0px 0px 5px;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+}
+#topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    display: block;
+}
+#topnav ul ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 130px;
+    top: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+    opacity: 0;
+}
+#topnav ul ul li {
+    float: none;
+    color: black;
+    margin: 0;
+    padding: 4px;
+}
+#topnav li li a{
+    display: block;
+    padding: 15px 15px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+}
+#topnav li:hover ul {
+    opacity: 1;
+}
+
+.shop_list {
+    list-style-type: none;
+    position: absolute;
+    text-align: center;
+    color: coral;
+}
+
+.ad1 {
+    float: left;
+    width: 48%;
+    height: 450px;
+    padding: 3%;
+    background-color: lemonchiffon;
+}
+.ad1 h2 {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: lighter;    
+}
+.ad1 h3 {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: lighter;
+}
+.ad2 {
+    float: right;
+    width: 48%;
+    height: 450px;
+    padding: 3%;
+    background-color: lightpink;
+    font-family: 'Jeju Gothic', serif;
+    font-weight: lighter;
+}
+.ad2 h2 {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: lighter;    
+}
+.ad2 h3 {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: lighter;    
+}
+.midnav {
+    width: 100%;
+    padding: 10px 50px;
+    text-align: left;
+    background: rgb(196, 174, 238);
+    height: fit-content;
+}
+.midnav h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5em;
+    letter-spacing: 4px;
+    margin-bottom : 10px;
+}
+.midnav h3 {
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    font-family: 'Jeju Gothic', serif;
+    font-weight: lighter;    
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.divsec {
+    height: 130px;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 3px;
+    line-height: 130px;
+}
+.page_title {
+    height:170px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 7px;
+    line-height: 170px;
+}
+.button {
+    letter-spacing: 2px;
+	width: 130px;
+	height: 40px;
+	background-color: transparent;
+    border-color: black;
+	border-radius: 20px;
+    margin-top: 10px;
+    font-size: medium;
+}
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+	border-color: aliceblue;
+    color: aliceblue;
+}
+
+.store_title {
+    font-size: larger;
+    margin: 20px 0 -10px 20px ;
+}
+.store_content {
+    font-size: medium;
+    margin: 15px 25px;
+}
+.store_button {
+    width: 170px;
+	height: 45px;
+	background-color: rgb(196, 174, 238);
+	border-radius: 50px;
+    border: 0;
+    color: azure;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 30px;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+}
+.container_key {
+    display: grid;
+    margin: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.container_key img {
+    width: 100%;
+    height: 50%;
+    padding: 10%;
+}
+.container_best {
+    display: grid;
+    margin: 5% 5% -10% 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 12%;
+}
+.container_best img {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    border-radius: 12%;
+}
+.container_product {
+    display: grid;
+    margin: 5% 0%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 25px;
+}
+.container_product img {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    border-radius: 25px;
+}
+.container_best {
+    display: grid;
+    margin: 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#space {
+    height: 30px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    border: peru;
+}
+.item {
+    width: 400px;
+    height: 400px;
+    border: chartreuse;
+    background-color: aquamarine;
+    margin: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 20px lightgrey;
+    border-radius: 2%;
+
+}
+
+.join_form {
+    padding: 2% 5%;
+    text-align: left;
+    background: white;
+    background-image: url(./image/logo_circle_all.jpg);
+    background-position-x: 80%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 1300px;
+}
+.join_form h1 {
+    font-size: 4em;
+    letter-spacing: 3px;
+}
+.join_form h3 {
+    letter-spacing: 2px;
+}
+.join {
+    font-size: 1.3em;
+}
+.join_button {
+    width: 80px;
+    height: 35px;
+}
+.join_button:hover {
+    background-color: transparent;
+    border: 1px rgb(196, 174, 238) solid;
+    color: rgb(196, 174, 238);
+}
+.login {
+    background-color: lemonchiffon;
+    height: 500px;
+    padding: 1% 5%;
+    margin: 0;
+}
+.login h1 {
+    font-size: 5em;
+}
+.login h3 {
+    font-size: 1.7em;
+}
+#c {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.custom {
+    padding: 5%;
+}
+.custom h2 {
+    font-size: 3.5em; 
+    margin: 0%;
+}
+.opt1_3d {
+    float: left; 
+    width: 50%; 
+    padding: 5% 0% 0% 5%;
+    letter-spacing: 3px;
+}
+.opt2_3d {
+    float: left; 
+    width: 50%; 
+    padding: 5% 0% 0% 5%;
+    letter-spacing: 3px;
+}
+
+.form {
+    background-color: dimgrey;
+}
+.form_item {
+    display: inline-block; /*이부분에 성질을 inline-block로 바꿔줘서 가로배치를 해줬다.*/
+    vertical-align: top; /*밑에 4px 여백을 없에는것*/
+}
